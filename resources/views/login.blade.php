@@ -53,6 +53,7 @@
                     alert(res.message);
                 },
                 error :function (xhr, ajaxOption, thrownError) {
+                    console.log(xhr);
                     if (!xhr.responseJSON.message) {
                         if (!xhr.responseJSON.email) {
                             $.each(xhr.responseJSON.password, function (i, item){
