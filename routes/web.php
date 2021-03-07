@@ -25,3 +25,4 @@ Route::get('/regist', function () {
 Route::get('/list', function () {
     return view('list');
 });
+Route::view('/asdf', '404Error');
