@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>List User</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/moments.js') }}"></script>
+    <script src="{{ public_path('js/app.js') }}"></script>
+    <script src="{{ public_path('js/jquery.min.js') }}"></script>
+    <script src="{{ public_path('js/moments.js') }}"></script>
 </head>
 <body>
     <div class="container">
