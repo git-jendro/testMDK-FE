@@ -44,7 +44,7 @@
         $('#tbody').html('');
         $.ajax({
             type : 'get',
-            url : 'http://test-mdk.herokuapp.com/list',
+            url : 'https://test-mdk.herokuapp.com/list',
             success : function (res) {
                 $.each(res, function (i, item){
                     i++;

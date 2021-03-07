@@ -44,16 +44,16 @@
             
             $.ajax({
                 type : 'post',
-                url : 'http://test-mdk.herokuapp.com/login',
+                url : 'https://test-mdk.herokuapp.com/login',
                 data : {
                     email : email,
                     password : password,
                 },
                 success : function (res) {
                     alert(res.message);
+                    console.log(res);
                 },
                 error :function (xhr, ajaxOption, thrownError) {
-                    console.log(xhr);
                     if (!xhr.responseJSON.message) {
                         if (!xhr.responseJSON.email) {
                             $.each(xhr.responseJSON.password, function (i, item){

@@ -50,7 +50,7 @@
             
             $.ajax({
                 type : 'post',
-                url : 'http://test-mdk.herokuapp.com/regist',
+                url : 'https://test-mdk.herokuapp.com/regist',
                 data : {
                     nama : nama,
                     email : email,
