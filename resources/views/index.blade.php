@@ -54,6 +54,7 @@
                 },
                 success : function (res) {
                     alert(res.message);
+                    $('title').html('List Registered User');
                     $('.container').html('<div class="col-12 mt-5"><div class="col-3 py-2"><div class="ui-widget"><input id="tags" class="form-control" placeholder="Search nama..."></div></div><div class="card"><div class="card-header"><h3 class="text-center">List Registered User</h3></div><div class="card-body"><table class="table"><thead><tr><th scope="col">#</th><th scope="col">Nama</th><th scope="col">Email</th><th scope="col">Register At</th></tr></thead><tbody id="tbody"></tbody></table></div></div></div>');
                     $.ajax({
                         type : 'get',
@@ -111,6 +112,7 @@
             })
         });
         $("a").click(function(){
+            $('title').html('Register');
             $('.container').html('<div class="col-md-4 offset-md-4 mt-5"><div class="card"><div class="card-header"><h3 class="text-center">Form Register</h3></div><div class="card-body"><div class="form-group"><label for=""><strong>Nama</strong></label><input type="text" id="nama" class="form-control" placeholder="Nama"></div><div class="form-group"><label for=""><strong>Email</strong></label><input type="text" id="email" class="form-control" placeholder="Email"></div><div class="form-group"><label for=""><strong>Password</strong></label><input type="password" id="password" class="form-control" placeholder="Password"></div></div><div class="card-footer"><button type="button" class="btn btn-primary btn-block">Submit</button></div></div></div>');
             $("button").click(function(){
                 var nama = document.getElementById("nama").value;
@@ -127,6 +129,7 @@
                     },
                     success : function (res) {
                         alert(res.message);
+                        $('title').html('Login');
                         $('.container').html('<div class="col-md-4 offset-md-4 mt-5"><div class="card"><div class="card-header"><h3 class="text-center">Form Login</h3></div><div class="card-body"><div class="form-group"><label for=""><strong>Email</strong></label><input type="text" id="email" class="form-control" placeholder="Email"></div><div class="form-group"><label for=""><strong>Password</strong></label><input type="password" id="password" class="form-control" placeholder="Password"></div></div><div class="card-footer"><button type="button" class="btn btn-primary btn-block">Submit</button><p class="py-2">Register akun <a href="#">click here</a></p></div></div></div>');
                         $("button").click(function(){
                             var email = document.getElementById("email").value;
@@ -141,6 +144,7 @@
                                 },
                                 success : function (res) {
                                     alert(res.message);
+                                    $('title').html('List Registered User');
                                     $('.container').html('<div class="col-12 mt-5"><div class="col-3 py-2"><div class="ui-widget"><input id="tags" class="form-control" placeholder="Search nama..."></div></div><div class="card"><div class="card-header"><h3 class="text-center">List Registered User</h3></div><div class="card-body"><table class="table"><thead><tr><th scope="col">#</th><th scope="col">Nama</th><th scope="col">Email</th><th scope="col">Register At</th></tr></thead><tbody id="tbody"></tbody></table></div></div></div>');
                                     $.ajax({
                                         type : 'get',
