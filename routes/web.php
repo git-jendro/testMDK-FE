@@ -22,3 +22,6 @@ Route::get('/login', function () {
 Route::get('/regist', function () {
     return view('regist');
 });
+Route::get('/list', function () {
+    return view('list');
+});
